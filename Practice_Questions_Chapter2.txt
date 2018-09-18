@@ -1,0 +1,120 @@
+**********************************************************************************************************************************************************
+1. What are the two values of the Boolean data type? How do you write them?
+
+Ans: True and False
+Boolean = True
+Boolean = False
+**********************************************************************************************************************************************************
+
+2. What are the three Boolean operators?
+
+Ans: 'And', 'Or' and 'Not'
+**********************************************************************************************************************************************************
+
+3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+
+Ans:
+3 > 2 & 3 > 1 = TRUE
+(2>1) & (3>2) = TRUE
+2 > 1 & 3 > 2 = FALSE
+2 > 1 & 2 > 3 = FALSE
+(2>1) | (3>2) = TRUE
+2 > 1 | 3 > 2 = FALSE
+2 > 1 | 2 > 3 = FALSE
+(2>1) | (2>3) = TRUE
+2 > 1 != 3 > 2 = TRUE
+2 > 1 != 2 > 3 = FALSE
+**********************************************************************************************************************************************************
+4. What do the following expressions evaluate to?
+(5 > 4) and (3 == 5)
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+
+Ans:
+* (5 > 4) and (3 == 5) - FALSE
+* not (5 > 4) - FALSE
+* (5 > 4) or (3 == 5) - TRUE
+* not ((5 > 4) or (3 == 5)) - FALSE
+* (True and True) and (True == False) - FALSE
+* (not False) or (not True) - TRUE
+**********************************************************************************************************************************************************
+5. What are the six comparison operators?
+
+Ans:
+* "==" - if the values of two operands are equal then it is 'TRUE' else 'FALSE'
+* "!=" - if the values of two operands are not equal then it is 'TRUE' else 'FALSE'
+* ">" - if the value of left operand is greater than the value of right operand, the condition becomes 'TRUE' else 'FALSE'
+* "<" - if the value of left operand is lesser than the value of right operand, the condition becomes 'TRUE' else 'FALSE'
+* ">=" - if the value of left operand is greater than or equal to the value of right operand, the condition becomes 'TRUE' else 'FALSE'
+* "<=" - if the value of left operand is lesser than ore equal to the value of right operand, the condition becomes 'TRUE' else 'FALSE'
+**********************************************************************************************************************************************************
+6. What is the difference between the equal to operator and the assignment operator?
+
+Ans: 
+Equal to operator is '==' and assignment operator is "="
+When we use assignment operator "=", it means it assigns a value provided in right side to left side variable. Like 'a = 5', which means it assigns 5 to variable 'a'
+Equal to operator "==" is used to compare the two values. Like '5' == '5' if it is correct then returns 'TRUE' else 'FALSE'
+**********************************************************************************************************************************************************
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+ print('eggs')
+ if spam > 5:
+ print('bacon')
+ else:
+ print('ham')
+ print('spam')
+
+ Ans:
+* First we initiated a variable 'spam' with a value as '0'
+* Then we are checking the condition if it is '10', it is not because it is '0', hence it will not 'print('eggs')'
+* Again we are checkint the condition if it is '5', it is not because it is '0', hence it will not 'print('bacon')'
+* then it goes to 'else:' part and prints ('ham' and 'spam')
+**********************************************************************************************************************************************************
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam
+
+Ans:
+user_value = int(input('Provide a number to get the result: '))
+if user_value == 1:
+print ('Hello')
+elif user_value == 2:
+print ('Howdy')
+else
+print ('Greetings!')
+**********************************************************************************************************************************************************
+9. What can you press if your program is stuck in an infinite loop?
+
+Ans: CTRL + C
+**********************************************************************************************************************************************************
+
+10. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+
+Ans: 
+range(10)
+for i in range(10):
+	print(i)
+
+which prints from 0 to 9
+
+range(0,10)
+for i in range(0,10):
+	print(i) 
+
+similar, which also prints from 0 to 9
+
+range(0,10,1)
+for i in range(0,10,1):
+	print(i)
+
+similar, which also prints from 0 to 9
+**********************************************************************************************************************************************************
+
+
+
+
+
+
+
